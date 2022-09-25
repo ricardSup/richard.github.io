@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npm run clean && parcel public/index.html --out-dir development -p 3000",
     "build": "rimraf ./dist && parcel build public/*.html --out-dir dist --public-url ./",
-    "clean": "rimraf ./development && rimraf ./.cache"
+    "clean": "rimraf ./development && rimraf ./.cache",
+    "push-gh-pages": "push-dir --dir=dist --branch=main --cleanup --verbose"
   },
   "repository": {
     "type": "git",
